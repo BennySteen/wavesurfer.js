@@ -3,9 +3,9 @@ export function makeDraggable(
   onDrag: (dx: number, dy: number, x: number, y: number) => void,
   onStart?: (x: number, y: number) => void,
   onEnd?: (x: number, y: number) => void,
-  threshold = 3,
+  threshold = 0,
   mouseButton = 0,
-  touchDelay = 100,
+  touchDelay = 0,
 ): () => void {
   if (!element) return () => void 0
 
